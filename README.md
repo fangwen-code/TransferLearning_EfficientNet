@@ -12,10 +12,10 @@ https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-lungcancer-no-a
 
 三、最佳模型相关结果：
 
-<img width="300" height="180" alt="efficientnet-b1 aug 3-fold epoch Loss plot" src="https://github.com/user-attachments/assets/8a8af750-f021-4dff-b708-027d2e7c797c" />
-<img width="300" height="180" alt="efficientnet-b1 aug 3-fold epoch Acc plot" src="https://github.com/user-attachments/assets/b42567a7-6b8c-43d4-a32a-dd6eecdfa520" />
+<img width="400" height="300" alt="efficientnet-b1 aug 3-fold epoch Loss plot" src="https://github.com/user-attachments/assets/8a8af750-f021-4dff-b708-027d2e7c797c" />
+<img width="400" height="300" alt="efficientnet-b1 aug 3-fold epoch Acc plot" src="https://github.com/user-attachments/assets/b42567a7-6b8c-43d4-a32a-dd6eecdfa520" />
 
-<img width="300" height="200" alt="efficientnet-b1 aug 3-fold test ROC" src="https://github.com/user-attachments/assets/d36d2fe6-3833-4ec1-8ed2-5bd400dfab2a" />
-<img width="300" height="200" alt="efficientnet-b1 aug 3-fold test confusion_matrix" src="https://github.com/user-attachments/assets/efb8a4d2-c711-4b59-bda8-a2eeb79b0067" />
+<img width="400" height="300" alt="efficientnet-b1 aug 3-fold test ROC" src="https://github.com/user-attachments/assets/d36d2fe6-3833-4ec1-8ed2-5bd400dfab2a" />
+<img width="400" height="300" alt="efficientnet-b1 aug 3-fold test confusion_matrix" src="https://github.com/user-attachments/assets/efb8a4d2-c711-4b59-bda8-a2eeb79b0067" />
 
 
