@@ -6,14 +6,14 @@ https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-aug-noshape-sof
 2) 训练集未进行数据增强：
 https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-noaug-noshape-soft
 3) 数据增强前后性能对比：
-<img width="1224" height="375" alt="image" src="https://github.com/user-attachments/assets/dc5971b7-c35b-40ca-ad0a-453c7c7b72da" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dc5971b7-c35b-40ca-ad0a-453c7c7b72da" />
 
 注：相关结果及代码详见上述训练过程链接即可获得。
 
 三、最佳模型相关结果：
-<img width="1017" height="603" alt="image" src="https://github.com/user-attachments/assets/4fe7e88f-09f2-4bae-81bc-7278f2d0dcf9" />
-<img width="1019" height="596" alt="image" src="https://github.com/user-attachments/assets/d472ad23-d2bc-4483-92ee-60e519e4f459" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4fe7e88f-09f2-4bae-81bc-7278f2d0dcf9" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/d472ad23-d2bc-4483-92ee-60e519e4f459" />
 
-<img width="738" height="565" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
 
-<img width="668" height="567" alt="image" src="https://github.com/user-attachments/assets/773b1dec-6b2d-42fc-9810-45a0b892594b" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/773b1dec-6b2d-42fc-9810-45a0b892594b" />
