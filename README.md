@@ -11,6 +11,7 @@ https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-noaug-noshape-s
 注：相关结果及代码详见上述训练过程链接即可获得。
 
 三、最佳模型相关结果：
+
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/4fe7e88f-09f2-4bae-81bc-7278f2d0dcf9" />
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d472ad23-d2bc-4483-92ee-60e519e4f459" />
 
