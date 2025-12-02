@@ -1,4 +1,4 @@
-<img width="1218" height="368" alt="image" src="https://github.com/user-attachments/assets/386209f2-c73c-48c0-a18b-b8e4773a9cb9" />一、复现文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images
+一、复现文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images
 
 二、训练过程：
 1) 训练集数据增强：
@@ -17,4 +17,6 @@ https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-noaug-noshape-s
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/773b1dec-6b2d-42fc-9810-45a0b892594b" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/f9ebdeca-b123-4aae-aec4-27897bc51ed7" />
+
+
