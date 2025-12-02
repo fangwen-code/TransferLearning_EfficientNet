@@ -15,7 +15,7 @@ https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-noaug-noshape-s
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/4fe7e88f-09f2-4bae-81bc-7278f2d0dcf9" />
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d472ad23-d2bc-4483-92ee-60e519e4f459" />
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
+<img width="400" height="375" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
 
 <img width="400" height="375" alt="image" src="https://github.com/user-attachments/assets/d55a51e8-0d9c-4fbc-939c-b6ccf7b08624" />
 
