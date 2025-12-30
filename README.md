@@ -1,6 +1,6 @@
-一、介绍
-该项目参考文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images  
-因该文献未公开代码，故根据文献描述进行复现，文献作者是利用Tensorflow框架，而此处是基于pytorch框架。
+一、介绍  
+  该项目参考文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images  
+因该文献未公开代码，故根据文献描述进行复现，文献作者是利用Tensorflow框架，而此处是基于pytorch框架。  
 
 该项目主要包含两个部分：  
 1）深度学习模型训练：基于训练集是否进行了数据增强处理的模型训练。   
