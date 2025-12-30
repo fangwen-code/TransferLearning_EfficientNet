@@ -4,7 +4,7 @@
 
 该项目主要包含两个部分：  
 1）深度学习模型训练：基于训练集是否进行了数据增强处理的模型训练。   
-2）模型基于ONNX Runtime CPU推理性能分析：基于最佳模型开展，包含模型优化，如Conv+BN 融合，模型全量量化/选择性量化。    
+2）模型基于ONNX Runtime CPU推理性能分析：基于最佳模型开展，包含模型优化，如Conv+BN 融合，模型全量量化/选择性量化。（文献中不涉及此部分，为新增内容）    
 
 二、深度学习模型训练
 
@@ -12,8 +12,10 @@
 
 a. 训练集数据增强：  
 https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-aug-noshape-soft  
+
 b. 训练集未进行数据增强：  
 https://www.kaggle.com/code/fangwenkaggle/5fold-transferlearning-noaug-noshape-soft  
+
 c. 数据增强前后性能对比：  
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/f5a400c7-ab42-4494-bcd8-ad32e25b6950" />
 
@@ -24,6 +26,7 @@ c. 数据增强前后性能对比：
 
 <img width="400" height="375" alt="image" src="https://github.com/user-attachments/assets/8c2e2dd8-2d3d-480b-9b38-52194cd4e45d" />
 <img width="400" height="375" alt="image" src="https://github.com/user-attachments/assets/d55a51e8-0d9c-4fbc-939c-b6ccf7b08624" />  
+
 
 综上所述：  
 a. 基于EfficientNet迁移学习得到的最佳模型实现了整体accuracy近0.95。  
