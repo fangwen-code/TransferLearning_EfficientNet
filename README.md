@@ -1,10 +1,11 @@
-一、介绍  
+<img width="81" height="25" alt="image" src="https://github.com/user-attachments/assets/a2d8ab7a-b934-419f-887d-69ee22179224" />一、介绍  
   该项目参考文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images  
 因该文献未公开代码，故根据文献描述进行复现，文献作者是利用Tensorflow框架，而此处是基于pytorch框架。  
 
 该项目主要包含两个部分：  
 1）深度学习模型训练：基于训练集是否进行了数据增强处理的模型训练。   
-2）模型基于ONNX Runtime CPU推理性能分析：基于最佳模型开展，包含模型优化，如Conv+BN 融合，模型全量量化/选择性量化。（文献中不涉及此部分，为新增内容）    
+2）模型基于ONNX Runtime CPU推理性能分析：基于最佳模型开展，包含模型优化，如Conv+BN 融合，模型全量量化/选择性量化。（文献中不涉及此部分，为新增内容）  
+3）模型基于TensorRT GPU推理性能分析：基于最佳模型进行Conv+BN 融合后开展，包含FP32、FP32+FP16等量化方式。（文献中不涉及此部分，为新增内容）
 
 二、深度学习模型训练
 
@@ -41,6 +42,17 @@ https://www.kaggle.com/code/fangwenkaggle/transfer-learning-ort-cpu-dynamic-2
 ORT.CPU.inference.xlsx: 该表格sheet1展示了各模型在CPU推理过程中精度的变化情况；sheet2展示了CPU推理过程性能的变化情况；  
 从结果来看：Conv+BN 融合为无精度损失优化，而在经过全量量化和选择性量化后，模型压缩率70%+,但精度及性能显著下降。
 
+四、TensorRT GPU推理 
+
+1、具体代码、运行过程及结果：  
+https://www.kaggle.com/code/fangwenkaggle/transfer-learning-trt-gpu-dynamic-fp16
+
+2、相关结果见表格：  
+TRT.GPU.inference.xlsx: 该表格sheet1展示了不同量化方式在GPU推理过程中精度的变化情况；sheet2展示了GPU推理过程性能的变化情况；  
+从结果来看,TensorRT GPU 端采用 FP32+FP16 混合量化后：
+a. 模型 macro avg F1仅微降 0.01、accuracy波动≤0.01，恶性样本不受影响; 
+b. 单样本延迟降低，吞吐量增加：单样本延迟从1.46ms -> 0.86ms, 吞吐量从685.73 -> 1161.79 (Batch_size = 8)。
+
 四、讨论  
 1）复现出的结果和文献不一致，可能存在如下原因：  
 a. 图像预处理存在差异，如图像肺部切割部分；  
@@ -50,4 +62,7 @@ d. 根据文献workflow，发现验证集和训练集都进行了数据增强，
 
 2）基于ONNX Runtime CPU推理，发现不符合模型量化后“低延迟，高吞吐”特性。可能存在如下原因：   
 a. 模型的关键层（如病灶特征提取层）对量化噪声敏感，导致精度大幅下降; 后续考虑量化感知训练QAT+选择性量化（仅量化非关键层）。  
-b. CPU对INT8量化的优化效果不如GPU/TensorRT, 后续考虑利用TensorRT GPU进行推理。  
+b. CPU对INT8量化的优化效果不如GPU/TensorRT, 可结合实际场景选择GPU进行推理。 
+
+3）基于TensorRT GPU推理，后续待优化的方向：   
+a. 引入 TensorRT INT8 量化 + 医疗 CT 校准集微调，进一步压缩显存并维持精度。
