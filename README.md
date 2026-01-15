@@ -1,4 +1,4 @@
-<img width="81" height="25" alt="image" src="https://github.com/user-attachments/assets/a2d8ab7a-b934-419f-887d-69ee22179224" />一、介绍  
+一、介绍  
   该项目参考文献：Lung-EffNet: Lung cancer classification using EfficientNet from CT-scan images  
 因该文献未公开代码，故根据文献描述进行复现，文献作者是利用Tensorflow框架，而此处是基于pytorch框架。  
 
@@ -53,7 +53,7 @@ TRT.GPU.inference.xlsx: 该表格sheet1展示了不同量化方式在GPU推理�
 a. 模型 macro avg F1仅微降 0.01、accuracy波动≤0.01，恶性样本不受影响; 
 b. 单样本延迟降低，吞吐量增加：单样本延迟从1.46ms -> 0.86ms, 吞吐量从685.73 -> 1161.79 (Batch_size = 8)。
 
-四、讨论  
+五、讨论  
 1）复现出的结果和文献不一致，可能存在如下原因：  
 a. 图像预处理存在差异，如图像肺部切割部分；  
 b. 训练集数据增强方式如旋转角度，明暗程度等不同；  
