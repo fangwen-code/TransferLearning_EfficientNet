@@ -45,13 +45,13 @@ ORT.CPU.inference.xlsx: 该表格sheet1展示了各模型在CPU推理过程中�
 四、TensorRT GPU推理 
 
 1、具体代码、运行过程及结果：  
-https://www.kaggle.com/code/fangwenkaggle/transfer-learning-trt-gpu-dynamic-fp16
+https://www.kaggle.com/code/fangwenkaggle/transfer-learning-trt-gpu-dynamic-fp16  
 
 2、相关结果见表格：  
-TRT.GPU.inference.xlsx: 该表格sheet1展示了不同量化方式在GPU推理过程中精度的变化情况；sheet2展示了GPU推理过程性能的变化情况；  
-从结果来看,TensorRT GPU 端采用 FP32+FP16 混合量化后：
-a. 模型 macro avg F1仅微降 0.01、accuracy波动≤0.01，恶性样本不受影响; 
-b. 单样本延迟降低，吞吐量增加：单样本延迟从1.46ms -> 0.86ms, 吞吐量从685.73 -> 1161.79 (Batch_size = 8)。
+TRT.GPU.inference.xlsx: 该表格sheet1展示了不同量化方式在GPU推理过程中精度的变化情况；sheet2展示了GPU推理过程性能的变化情况；    
+从结果来看,TensorRT GPU 端采用 FP32+FP16 混合量化后：  
+a. 模型 macro avg F1仅微降 0.01、accuracy波动≤0.01，恶性样本不受影响;   
+b. 单样本延迟降低，吞吐量增加：单样本延迟从1.46ms -> 0.86ms, 吞吐量从685.73 -> 1161.79 (Batch_size = 8)。  
 
 五、讨论  
 1）复现出的结果和文献不一致，可能存在如下原因：  
